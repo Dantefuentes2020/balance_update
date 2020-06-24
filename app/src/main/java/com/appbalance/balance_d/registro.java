@@ -2,56 +2,91 @@ package com.appbalance.balance_d;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
-import android.content.SharedPreferences;
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.widget.Button;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.appbalance.balance_d.db.Conexion;
 import com.appbalance.balance_d.db.datos;
 
-import java.sql.Blob;
 import java.util.Vector;
 
-public class registro extends AppCompatActivity implements datos {
+public class registro extends AppCompatActivity  implements datos{
 
-    private EditText nombre, apellido, email, password;
-    private Button btn_registrarse;
-    private Button btn_atras;
-
-    private Context context;
-
-    private static String registros = "datos";
-
-
-public registro(Context context){
-    this.context = context;
-}
-
+    private EditText nombre, apellido, email, pass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-        nombre = findViewById(R.id.nombreid);
-        apellido = findViewById(R.id.apellidoid);
-        email = findViewById(R.id.emailid);
-        password = findViewById(R.id.passid);
+        nombre= (EditText)findViewById(R.id.nombreid);
+        apellido = (EditText)findViewById(R.id.apellidoid);
+        email = (EditText)findViewById(R.id.emailid);
+        pass = (EditText)findViewById(R.id.passid);
+
+
     }
+    public void registro(View view){
 
-    @Override
+     String sMensaje;
+        String nombreuser = nombre.getText().toString().trim();
+        String apellidouser = apellido.getText().toString().trim();
+        String emailuser = email.getText().toString().trim();
+        String passuser = pass.getText().toString().trim();
 
-    public void registrarse(String nombre_usuario, String apellido_usuario, Blob email, Blob contrasena) {
+        if(nombreuser.isEmpty() && apellidouser.isEmpty() && emailuser.isEmpty() && passuser.isEmpty()){ // V^V=V
+            sMensaje =  "Debe completar todos los campos";
+            mensajes(sMensaje);
+        }else if(nombreuser.isEmpty()){
+            sMensaje =  "Debe ingresar un nombre";
+            mensajes(sMensaje);
+        }else if(apellidouser.isEmpty()){
+            sMensaje =  "Debe ingresar un apellido";
+            mensajes(sMensaje);
+        }else if(emailuser.isEmpty()){
+            sMensaje =  "Debe ingresar su email";
+            mensajes(sMensaje);
+        }else if(passuser.isEmpty()){
+            sMensaje =  "Debe ingresar una contraseña";
+            mensajes(sMensaje);
+        }else {
 
-        SharedPreferences preferencias = context.getSharedPreferences(registros, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor= preferencias.edit();
-        editor.putString("datos",nombre_usuario +" "+apellido_usuario +" "+email+" "+contrasena);
-        editor.commit();
+
+            registrarse(nombreuser, apellidouser, emailuser, passuser);
 
         }
 
+    }
+
+        public void mensajes(String mensaje){
+            Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
+        }
+
+
+    @Override
+    public void registrarse(String nombre_usuario, String apellido_usuario, String email, String contrasena) {
+        Conexion admin = new Conexion(this, "database", null, 1);
+        SQLiteDatabase BaseDeDatabase = admin.getWritableDatabase();
+
+        ContentValues contenedor = new ContentValues();
+        contenedor.put("nombre_usuario",nombre_usuario);
+        contenedor.put("apellido_usuario",apellido_usuario);
+        contenedor.put("email",email);
+        contenedor.put("contrasena",contrasena);
+
+
+        BaseDeDatabase.insert("registrosbalance",null,contenedor);
+
+        BaseDeDatabase.close();
+
+    }
 
     @Override
     public Vector<String> consultaregistros(int user) {
         return null;
     }
+
+
 }

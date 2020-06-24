@@ -135,6 +135,7 @@
                         android:layout_height="55dp"
                         android:layout_weight="1"
                         android:background="@drawable/botocuadrado"
+                        android:onClick="registro"
                         android:text="Registrarse" />
                 </LinearLayout>
             </LinearLayout>

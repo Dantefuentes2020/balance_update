@@ -9,14 +9,14 @@ import androidx.annotation.Nullable;
 import java.sql.Blob;
 import java.util.Vector;
 
-public class conexion extends SQLiteOpenHelper implements datos{
-    public conexion(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+public class Conexion extends SQLiteOpenHelper {
+    public Conexion(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
     @Override
     public void onCreate(SQLiteDatabase database) {
-        String sQuery= "CREATE TABLE registrosbalance(id INTEGER PRIMARY KEY AUTOINCREMENT, nombre_usuario TEXT,apellido_usuario TEXT,email BLOB,contrasena BLOB)";
+        String sQuery= "CREATE TABLE registrosbalance(id INTEGER PRIMARY KEY AUTOINCREMENT, nombre_usuario TEXT,apellido_usuario TEXT,email TEXT,contrasena TEXT)";
         database.execSQL(sQuery);
 
     }
@@ -27,7 +27,7 @@ public class conexion extends SQLiteOpenHelper implements datos{
     }
     //metodos de insercion
 
-    public void registrarse(String nombre_usuario , String apellido_usuario, Blob email, Blob contrasena)
+    public void registrarse(String nombre_usuario , String apellido_usuario, String email, String contrasena)
     {SQLiteDatabase database = getWritableDatabase();
     String sQuery= "Insert INTO registrosbalance VALUES ("+ nombre_usuario+", "+apellido_usuario+","+email+","+contrasena+" )";
     database.execSQL(sQuery);
@@ -41,7 +41,7 @@ public class conexion extends SQLiteOpenHelper implements datos{
     Cursor cursor =database.rawQuery(SQuery,null);
 
     while(cursor.moveToNext()){
-        consulta.add(cursor.getString(0)+""+cursor.getString(1)+""+cursor.getBlob(2)+""+cursor.getBlob(3));
+        consulta.add(cursor.getString(0)+""+cursor.getString(1)+""+cursor.getString(2)+""+cursor.getString(3));
     }
     //cerramos el cursor
     cursor.close();
