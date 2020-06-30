@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu">
+    tools:context=".Menu">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -38,13 +38,28 @@
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:background="@drawable/icon1"
-                            android:gravity="center_horizontal|center_vertical" />
+                            android:gravity="center_horizontal|center_vertical"
+                            android:onClick="ajustes" />
 
                         <Button
                             android:id="@+id/button19"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:background="@drawable/icon2" />
+                            android:background="@drawable/icon2"
+                            android:onClick="Tips" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical">
+
+                        <TextView
+                            android:id="@+id/textView65"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="   " />
                     </TableRow>
 
                     <TableRow
@@ -56,15 +71,28 @@
                             android:id="@+id/button20"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:background="@drawable/icon3" />
+                            android:background="@drawable/mp3"
+                            android:onClick="musica" />
 
                         <Button
                             android:id="@+id/button9"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:background="@drawable/icon4"
-                            android:text="Button" />
+                            android:onClick="Juegos" />
 
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical">
+
+                        <TextView
+                            android:id="@+id/textView65"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="   " />
                     </TableRow>
 
                     <TableRow
@@ -74,15 +102,18 @@
 
                         <Button
                             android:id="@+id/button22"
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:background="@drawable/icon5" />
+                            android:layout_width="125dp"
+                            android:layout_height="130dp"
+                            android:background="@drawable/icon5"
+                            android:onClick="imc_salud" />
 
                         <Button
                             android:id="@+id/button23"
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:background="@drawable/icon6" />
+                            android:layout_width="125dp"
+                            android:layout_height="130dp"
+                            android:background="@drawable/icon6"
+                            android:onClick="Tareas" />
+
                     </TableRow>
 
                 </TableLayout>
@@ -94,6 +125,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:background="?attr/actionModeCloseDrawable" />
+
         </LinearLayout>
 
     </FrameLayout>

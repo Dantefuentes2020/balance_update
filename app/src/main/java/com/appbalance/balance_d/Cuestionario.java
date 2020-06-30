@@ -5,9 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.RadioButton;
 
-public class cuestionario extends AppCompatActivity {
+public class Cuestionario extends AppCompatActivity {
     //RadioButton P1R1,P1R2,P1R3,P2R1,P2R2,P2R3,P3R1,P3R2,P3R3,P4R1,P4R2,P4R3,P5R1,P5R2,P5R3,P6R1,P6R2,P6R3;
 
   // int puntajetotal;
@@ -49,8 +48,9 @@ public class cuestionario extends AppCompatActivity {
      //   {
     //        puntajetotal=+0 ;
    //     }
-        Intent i = new Intent(this,niveles.class);
+        Intent i = new Intent(this, Msje_encuesta.class);
       //  i.putExtra("puntaje",puntajetotal);
         startActivity(i);
     }
+
 }

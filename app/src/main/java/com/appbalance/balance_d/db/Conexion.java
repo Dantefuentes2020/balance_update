@@ -34,10 +34,11 @@ public class Conexion extends SQLiteOpenHelper {
     database.close();
 
     }
-    public Vector<String> consultaregistros(int user){
+
+    public Vector<String> consultaregistros(String nombre){
     Vector<String> consulta = new Vector<String>();
     SQLiteDatabase database = getReadableDatabase();
-    String SQuery = "SELECT nombre_usuario, apellido_usuario, email, contrasena FROM registrosbalance WHERE id=" +user;
+    String SQuery = "SELECT nombre_usuario, apellido_usuario, email, contrasena FROM registrosbalance WHERE nombre_usuario=" +nombre;
     Cursor cursor =database.rawQuery(SQuery,null);
 
     while(cursor.moveToNext()){
@@ -46,6 +47,8 @@ public class Conexion extends SQLiteOpenHelper {
     //cerramos el cursor
     cursor.close();
     database.close();
+
     return consulta;
     }
 }
+

@@ -4,12 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sugerencias">
+    tools:context=".Tareas">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/fondo">
-
-    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package com.appbalance.balance_d;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ import com.appbalance.balance_d.db.datos;
 
 import java.util.Vector;
 
-public class registro extends AppCompatActivity  implements datos{
+public class Registro extends AppCompatActivity  implements datos{
 
     private EditText nombre, apellido, email, pass;
     @Override
@@ -29,7 +30,6 @@ public class registro extends AppCompatActivity  implements datos{
 
     }
     public void registro(View view){
-
      String sMensaje;
         String nombreuser = nombre.getText().toString().trim();
         String apellidouser = apellido.getText().toString().trim();
@@ -51,14 +51,14 @@ public class registro extends AppCompatActivity  implements datos{
         }else if(passuser.isEmpty()){
             sMensaje =  "Debe ingresar una contraseña";
             mensajes(sMensaje);
-        }else {
-
+        }
+        else {
 
             registrarse(nombreuser, apellidouser, emailuser, passuser);
 
-        }
 
-    }
+        }
+        }
 
         public void mensajes(String mensaje){
             Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
@@ -68,7 +68,7 @@ public class registro extends AppCompatActivity  implements datos{
     @Override
     public void registrarse(String nombre_usuario, String apellido_usuario, String email, String contrasena) {
         Conexion admin = new Conexion(this, "database", null, 1);
-        SQLiteDatabase BaseDeDatabase = admin.getWritableDatabase();
+        SQLiteDatabase database = admin.getWritableDatabase();
 
         ContentValues contenedor = new ContentValues();
         contenedor.put("nombre_usuario",nombre_usuario);
@@ -76,15 +76,20 @@ public class registro extends AppCompatActivity  implements datos{
         contenedor.put("email",email);
         contenedor.put("contrasena",contrasena);
 
+        database.insert("registrosbalance",null,contenedor);
 
-        BaseDeDatabase.insert("registrosbalance",null,contenedor);
+        database.close();
 
-        BaseDeDatabase.close();
+        Toast.makeText(this, "Registro completado con exito", Toast.LENGTH_SHORT).show();
 
+        Intent ven=new Intent(this,Logueo.class);
+
+        startActivity(ven);
     }
 
     @Override
-    public Vector<String> consultaregistros(int user) {
+    public Vector<String> consultaregistros(String user) {
+
         return null;
     }
 

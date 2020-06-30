@@ -9,18 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sugerencias"/>
-        <activity android:name=".login" />
-        <activity android:name=".musica" />
-        <activity android:name=".juegos" />
-        <activity android:name=".consejo_salud" />
-        <activity android:name=".imc_salud" />
-        <activity android:name=".ajustes" />
-        <activity android:name=".menu" />
-        <activity android:name=".registro" />
-        <activity android:name=".niveles" />
-        <activity android:name=".cuestionario" />
-        <activity android:name=".acerca" />
+        <activity android:name=".Tareas"></activity>
+        <activity android:name=".Logueo" />
+        <activity
+            android:name=".ui.login.Autenticacion"
+            android:label="@string/title_activity_autenticacion" />
+        <activity android:name=".Msje_encuesta" />
+        <activity android:name=".Acerca_de" />
+        <activity android:name=".Tips" />
+        <activity android:name=".Musica" />
+        <activity android:name=".Juegos" />
+        <activity android:name=".Consejo_salud" />
+        <activity android:name=".Imc_salud" />
+        <activity android:name=".Ajustes" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Registro" />
+        <activity android:name=".Cuestionario" />
         <activity android:name=".Bienvenida">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
