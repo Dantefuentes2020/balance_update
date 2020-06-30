@@ -80,6 +80,7 @@ public class Registro extends AppCompatActivity  implements datos{
 
         database.close();
 
+
         Toast.makeText(this, "Registro completado con exito", Toast.LENGTH_SHORT).show();
 
         Intent ven=new Intent(this,Logueo.class);

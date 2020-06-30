@@ -58,7 +58,7 @@
                     android:id="@+id/textView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Como te sientes?" />
+                    android:text="Como te sientes? " />
 
                 <LinearLayout
                     android:layout_width="match_parent"

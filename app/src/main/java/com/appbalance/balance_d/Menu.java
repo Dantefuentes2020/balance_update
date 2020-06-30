@@ -20,6 +20,7 @@ public class Menu extends AppCompatActivity {
         startActivity(i);
     }
     public void imc_salud(View view)
+
     {
         Intent i = new Intent(this, Imc_salud.class);
         startActivity(i);

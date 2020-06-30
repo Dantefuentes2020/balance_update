@@ -28,8 +28,8 @@
 
             <TextView
                 android:id="@+id/textView53"
-                android:layout_width="298dp"
-                android:layout_height="152dp"
+                android:layout_width="290dp"
+                android:layout_height="151dp"
                 android:gravity="center"
                 android:text="Averigua nuestros consejos"
                 android:textSize="18sp" />

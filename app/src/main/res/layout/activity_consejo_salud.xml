@@ -25,87 +25,11 @@
                 android:text="2020"
                 android:textSize="24sp" />
 
-            <TextView
-                android:id="@+id/textView66"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal|fill_vertical"
-                android:text="Julio"
-                android:textSize="24sp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal|center_vertical"
-                android:orientation="vertical">
-
-                <TableLayout
-                    android:layout_width="350dp"
-                    android:layout_height="300dp"
-                    android:background="#16FFFFFF">
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/textView59"
-                            android:layout_width="45dp"
-                            android:layout_height="30dp"
-                            android:text="Lunes  " />
-
-                        <TextView
-                            android:id="@+id/textView60"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Martes  " />
-
-                        <TextView
-                            android:id="@+id/textView61"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Miercoles  " />
-
-                        <TextView
-                            android:id="@+id/textView62"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Jueves  " />
-
-                        <TextView
-                            android:id="@+id/textView63"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Viernes  " />
-
-                        <TextView
-                            android:id="@+id/textView64"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Sabado  " />
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <Button
-                            android:id="@+id/button28"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:text="Button" />
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-                </TableLayout>
-            </LinearLayout>
+                android:orientation="vertical"/>
         </LinearLayout>
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

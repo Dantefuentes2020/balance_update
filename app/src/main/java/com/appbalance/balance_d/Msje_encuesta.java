@@ -20,6 +20,7 @@ public class Msje_encuesta extends AppCompatActivity {
         startActivity(i);
     }
 
+
     public void adelante(View view)
     {
         Intent i = new Intent(this, Logueo.class);

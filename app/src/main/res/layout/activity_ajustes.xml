@@ -35,8 +35,8 @@
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="286dp"
+                    android:layout_height="144dp"
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView

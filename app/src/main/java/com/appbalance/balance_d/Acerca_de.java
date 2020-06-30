@@ -18,6 +18,7 @@ public class Acerca_de extends AppCompatActivity {
     {
         Intent i = new Intent(this, Cuestionario.class);
         startActivity(i);
+
     }
 
     public void atras(View view)

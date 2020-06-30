@@ -14,6 +14,7 @@ public class Cuestionario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuestionario);
+
      //   P1R1= (RadioButton) findViewById(R.id.P1R1);
      //   P1R2= (RadioButton) findViewById(R.id.P1R2);
      //   P1R3= (RadioButton) findViewById(R.id.P1R3);

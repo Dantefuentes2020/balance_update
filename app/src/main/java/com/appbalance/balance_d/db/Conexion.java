@@ -12,6 +12,7 @@ import java.util.Vector;
 public class Conexion extends SQLiteOpenHelper {
     public Conexion(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
+
     }
 
     @Override
