@@ -31,6 +31,8 @@ public class Logueo extends AppCompatActivity {
 
     public void loguearse(View view)
     {
+
+        
         Conexion admin=new Conexion(this,"registrosbalance",null,1);
         SQLiteDatabase database=admin.getWritableDatabase();
         String nombre=email.getText().toString();
