@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/xc"
+    android:background="@drawable/fondob"
     tools:context=".Registro">
 
     <FrameLayout
@@ -14,14 +14,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/fondoxd"
+            android:background="@drawable/fondobienvenida"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="259dp"
                 android:layout_height="436dp"
-                android:background="@drawable/fondo"
+                android:background="@drawable/fondomenu"
                 android:gravity="center_horizontal|center_vertical"
                 android:orientation="vertical">
 
@@ -119,7 +119,7 @@
                         android:layout_width="65dp"
                         android:layout_height="55dp"
                         android:layout_weight="1"
-                        android:background="@drawable/botocuadrado"
+                        android:background="@drawable/botocuadrad"
                         android:text="atras" />
 
                     <TextView
@@ -134,7 +134,7 @@
                         android:layout_width="65dp"
                         android:layout_height="55dp"
                         android:layout_weight="1"
-                        android:background="@drawable/botocuadrado"
+                        android:background="@drawable/botocuadrad"
                         android:onClick="registro"
                         android:text="Registrarse" />
                 </LinearLayout>
