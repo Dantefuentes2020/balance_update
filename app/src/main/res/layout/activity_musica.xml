@@ -65,6 +65,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="#57FFFFFF"
+                        android:onClick="stop"
                         android:text="STOP"
                         android:textSize="10sp" />
 
@@ -74,6 +75,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="#4DFFFFFF"
+                        android:onClick="pause"
                         android:text="PAUSA"
                         android:textSize="10sp" />
 
@@ -83,6 +85,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="#59FFFFFF"
+                        android:onClick="play"
                         android:text="PLAY"
                         android:textSize="10sp" />
 
