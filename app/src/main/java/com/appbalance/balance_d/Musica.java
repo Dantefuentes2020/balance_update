@@ -4,11 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
-
-import android.os.Bundle;
 
 public class Musica extends AppCompatActivity {
     MediaPlayer mp;
@@ -19,7 +15,7 @@ public class Musica extends AppCompatActivity {
     }
 
     public void play (View view){
-        mp = MediaPlayer.create(this,R.raw.hakuna);
+        mp = MediaPlayer.create(this,R.raw.hakun);
         mp.start();
         Toast.makeText(this, "play", Toast.LENGTH_SHORT).show();
     }
