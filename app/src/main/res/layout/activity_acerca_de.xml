@@ -68,10 +68,17 @@
                         android:onClick="atras"
                         android:text="Atras" />
 
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="  " />
+
                     <Button
                         android:id="@+id/button3"
                         android:layout_width="75dp"
-                        android:layout_height="60dp"
+                        android:layout_height="65dp"
                         android:layout_weight="1"
                         android:background="@drawable/botocuadrad"
                         android:onClick="siguiente"

@@ -42,11 +42,11 @@
                             android:onClick="ajustes" />
 
                         <Button
-                            android:id="@+id/button19"
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:background="@drawable/icon20"
-                            android:onClick="Tips" />
+                            android:id="@+id/button23"
+                            android:layout_width="125dp"
+                            android:layout_height="130dp"
+                            android:background="@drawable/icon60"
+                            android:onClick="Tareas" />
 
                     </TableRow>
 
@@ -104,15 +104,15 @@
                             android:id="@+id/button22"
                             android:layout_width="125dp"
                             android:layout_height="130dp"
-                            android:background="@drawable/icon50"
+                            android:background="@drawable/calculator"
                             android:onClick="imc_salud" />
 
                         <Button
-                            android:id="@+id/button23"
-                            android:layout_width="125dp"
-                            android:layout_height="130dp"
-                            android:background="@drawable/icon60"
-                            android:onClick="Tareas" />
+                            android:id="@+id/button19"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/icon20"
+                            android:onClick="Tips" />
 
                     </TableRow>
 

@@ -33,31 +33,29 @@ public class Logueo extends AppCompatActivity {
     {
 
 
-        Conexion admin=new Conexion(this,"registrosbalance",null,1);
+        Conexion admin=new Conexion(this,"database",null,1);
         SQLiteDatabase database=admin.getWritableDatabase();
         String nombre=email.getText().toString();
         String pass=contrasena.getText().toString();
 
-        fila=database.rawQuery("SELECT nombre_usuario, apellido_usuario, email, contrasena FROM registrosbalance WHERE nombre_usuario='" +email+"' and contrasena='"+contrasena+"'",null);
-        if(fila.moveToNext()){
-            String usua=fila.getString(3);
-            String pasword=fila.getString(4);
+    //    fila=database.rawQuery("SELECT nombre_usuario, apellido_usuario, email, contrasena FROM registrosbalance WHERE nombre_usuario='" +email+"' and contrasena='"+contrasena+"'",null);
+      //  if(fila.moveToNext()){
+        //    String usua=fila.getString(3);
+          //  String pasword=fila.getString(4);
 
-            if (nombre.equals(usua)&&pass.equals(pasword)){
+          //  if (nombre.equals(usua)&&pass.equals(pasword)){
 
 
                 Intent ven=new Intent(this,Menu.class);
                 startActivity(ven);
 
 
-                email.setText("");
-                contrasena.setText("");
-                ingresomenu(view); }
-            if (contrasena.getText().length() <1 && email.getText().length() <1)
-            { Toast.makeText(this, "campos vacios, complete los campos para continuar", Toast.LENGTH_SHORT).show();
+             //   ingresomenu(view); }
+          //  if (contrasena.getText().length() <1 && email.getText().length() <1)
+         //   { Toast.makeText(this, "campos vacios, complete los campos para continuar", Toast.LENGTH_SHORT).show();
 
-            }
-        }
+         //   }
+    //    }
     }
 
 
