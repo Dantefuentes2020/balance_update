@@ -69,7 +69,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Ajustes"
+                            android:text="@string/ajustes"
                             android:textSize="18sp" />
 
                         <TextView
@@ -112,7 +112,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Musica"
+                            android:text="@string/musica"
                             android:textSize="18sp" />
 
                         <TextView
@@ -120,7 +120,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Juegos"
+                            android:text="@string/juegos"
                             android:textSize="18sp" />
                     </TableRow>
 
