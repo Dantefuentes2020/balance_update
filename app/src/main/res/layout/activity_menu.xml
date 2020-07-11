@@ -133,7 +133,7 @@
                             android:id="@+id/button22"
                             android:layout_width="125dp"
                             android:layout_height="130dp"
-                            android:background="@drawable/calculator"
+                            android:background="@drawable/diet"
                             android:onClick="imc_salud" />
 
                         <Button
@@ -143,6 +143,28 @@
                             android:background="@drawable/icon20"
                             android:onClick="Tips" />
 
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical" >
+
+                        <TextView
+                            android:id="@+id/textView66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Recetas"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView67"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Tips"
+                            android:textSize="18sp" />
                     </TableRow>
 
                 </TableLayout>
