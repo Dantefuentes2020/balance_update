@@ -55,7 +55,7 @@
 
                 <EditText
                     android:id="@+id/editemail"
-                    android:layout_width="181dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="#345067E8"
                     android:ems="10"
@@ -70,7 +70,7 @@
 
                 <EditText
                     android:id="@+id/editcontrasena"
-                    android:layout_width="175dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="#36596BD6"
                     android:ems="10"

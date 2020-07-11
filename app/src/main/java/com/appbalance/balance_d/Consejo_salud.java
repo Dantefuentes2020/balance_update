@@ -21,8 +21,6 @@ TextView imcdat;
     imcdat = (TextView) findViewById(R.id.vieimc);
 
     imcdat.setText(indice);
-
-
     }
 
 

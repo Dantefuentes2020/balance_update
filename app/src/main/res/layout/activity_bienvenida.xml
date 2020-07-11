@@ -18,8 +18,8 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@drawable/fondobienvenida"
                 android:gravity="center_horizontal|center_vertical"
                 android:orientation="vertical">
@@ -28,7 +28,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Bienvenido!"
-                    android:textSize="18sp" />
+                    android:textColor="#0E0000"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold|italic" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -36,7 +38,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:text="A Balance"
-                    android:textSize="18sp" />
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold|italic" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -50,7 +54,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal|center_vertical"
                     android:text="nosotros te ayudaremos en tus labores diarias!"
-                    android:textSize="18sp" />
+                    android:textColor="#0E0000"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold|italic" />
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -58,14 +64,28 @@
                     android:layout_height="225dp"
                     android:src="@drawable/balanc" />
 
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="75dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/botocuadrad"
-                    android:onClick="siguiente"
-                    android:text="Siguiente" />
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="#A403A9F4"
+                        android:onClick="siguiente"
+                        android:text="SIGUIENTE" />
+                </LinearLayout>
+
             </LinearLayout>
+
         </LinearLayout>
 
     </FrameLayout>
