@@ -33,12 +33,15 @@ public class Logueo extends AppCompatActivity {
 
     public void registro(View view)
     {
-        Intent i = new Intent(this, Registro.class);
+        Intent i = new Intent(this, Menu.class);
         startActivity(i);
     }
 
     public void loguearse(View view)
     {
+        Intent i = new Intent(this, Menu.class);
+        startActivity(i);
+
         String nombre=email.getText().toString();
         String pass=contrasena.getText().toString();
 
