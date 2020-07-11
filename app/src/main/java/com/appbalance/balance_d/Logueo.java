@@ -18,7 +18,7 @@ public class Logueo extends AppCompatActivity {
     private EditText email;
     private EditText contrasena;
 
-        Conexion helper=new Conexion(this,"database",null,1);
+        Conexion admin=new Conexion(this,"database",null,1);
 
 
     @Override
@@ -60,7 +60,7 @@ public class Logueo extends AppCompatActivity {
 
 
             try {
-                Cursor cursor=helper.consultalogin
+                Cursor cursor=admin.consultalogin
                         (email.getText().toString(),contrasena.getText().toString());
                 if (cursor.getCount()>0)
                 { Intent f = new Intent(this, Menu.class);
