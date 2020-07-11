@@ -17,6 +17,15 @@
             android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Balance"
+                android:textSize="36sp" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -60,7 +69,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Ajustes" />
+                            android:text="Ajustes"
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/textView58"
@@ -102,14 +112,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Musica" />
+                            android:text="Musica"
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/textView60"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Juegos" />
+                            android:text="Juegos"
+                            android:textSize="18sp" />
                     </TableRow>
 
                     <TableRow
@@ -136,12 +148,6 @@
                 </TableLayout>
 
             </LinearLayout>
-
-            <Button
-                android:id="@+id/button24"
-                android:layout_width="81dp"
-                android:layout_height="80dp"
-                android:background="?attr/actionModeCloseDrawable" />
 
         </LinearLayout>
 
