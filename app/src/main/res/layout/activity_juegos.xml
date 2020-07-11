@@ -38,13 +38,14 @@
                 android:gravity="left"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/button27"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/abc_vector_test"
-                    android:gravity="left" />
             </LinearLayout>
+
+            <Button
+                android:id="@+id/button27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/abc_vector_test"
+                android:gravity="left" />
         </LinearLayout>
 
     </FrameLayout>
