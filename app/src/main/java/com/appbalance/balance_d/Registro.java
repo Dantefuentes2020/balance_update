@@ -11,13 +11,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.appbalance.balance_d.db.Conexion;
-import com.appbalance.balance_d.db.datos;
+import com.appbalance.balance_d.db.Datos;
 
 import java.util.Vector;
 
-public class Registro extends AppCompatActivity  implements datos{
+public class Registro extends AppCompatActivity  implements Datos {
 
     private EditText nombre, apellido, email, pass;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
