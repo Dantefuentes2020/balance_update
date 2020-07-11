@@ -4,117 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondomenu"
+    android:background="@drawable/background"
     tools:context=".Musica">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/portada1" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center|center_horizontal|center_vertical"
-            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.366">
 
-            <TextView
-                android:id="@+id/textView45"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center_vertical"
-                android:text="Musica!"
-                android:textSize="17sp" />
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/reproducir"
+            android:onClick="PlayPause" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal|center_vertical"
-                android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/detener"
+            android:onClick="Stop" />
 
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="231dp"
-                    android:layout_height="254dp"
-                    app:srcCompat="@drawable/musica" />
+        <Button
+            android:id="@+id/btn_repetir"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/no_repetir"
+            android:onClick="Repetir" />
 
-                <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="110dp"
-                    android:background="#3EFFFFFF"
-                    android:gravity="center|center_horizontal|center_vertical"
-                    android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_anterior"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/anterior"
+            android:onClick="Anterior" />
 
-                    <TextView
-                        android:id="@+id/textView46"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#40FFFFFF"
-                        android:gravity="center|center_horizontal|center_vertical"
-                        android:text="TRACK 01" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="50dp"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/button15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#57FFFFFF"
-                        android:onClick="stop"
-                        android:text="STOP"
-                        android:textSize="10sp" />
-
-                    <Button
-                        android:id="@+id/button16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#4DFFFFFF"
-                        android:onClick="pause"
-                        android:text="PAUSA"
-                        android:textSize="10sp" />
-
-                    <Button
-                        android:id="@+id/button17"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#59FFFFFF"
-                        android:onClick="play"
-                        android:text="PLAY"
-                        android:textSize="10sp" />
-
-                    <Button
-                        android:id="@+id/button21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#5EFFFFFF"
-                        android:text="NEXT"
-                        android:textSize="10sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:gravity="center|left"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:id="@+id/button12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:background="?attr/actionModeCloseDrawable" />
-                </LinearLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-
-    </FrameLayout>
-
+        <Button
+            android:id="@+id/btn_siguiente"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/siguiente"
+            android:onClick="Siguiente" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
