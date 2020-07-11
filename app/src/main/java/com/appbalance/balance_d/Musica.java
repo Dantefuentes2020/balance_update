@@ -1,6 +1,8 @@
 package com.appbalance.balance_d;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -154,5 +156,11 @@ public class Musica extends AppCompatActivity {
         }else{
             Toast.makeText(this, "No hay más canciones", Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void Volver(View view)
+    {
+        Intent i = new Intent(this, Menu.class);
+        startActivity(i);
     }
 }
