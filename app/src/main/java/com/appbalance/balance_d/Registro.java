@@ -85,7 +85,7 @@ public class Registro extends AppCompatActivity  implements Datos {
 
         Toast.makeText(this, "Registro completado con exito", Toast.LENGTH_SHORT).show();
 
-        Intent ven=new Intent(this,Logueo.class);
+        Intent ven=new Intent(this,Menuprincipal.class);
 
         startActivity(ven);
     }

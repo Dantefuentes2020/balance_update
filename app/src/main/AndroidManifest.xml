@@ -8,7 +8,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Tareas"></activity>
+        <activity android:name=".Menuprincipal"/>
+        <activity android:name=".Tareas" />
         <activity android:name=".Logueo" />
         <activity android:name=".Msje_encuesta" />
         <activity android:name=".Acerca_de" />
@@ -18,7 +19,6 @@
         <activity android:name=".Consejo_salud" />
         <activity android:name=".Imc_salud" />
         <activity android:name=".Ajustes" />
-        <activity android:name=".Menu" />
         <activity android:name=".Registro" />
         <activity android:name=".Cuestionario" />
         <activity android:name=".Bienvenida">

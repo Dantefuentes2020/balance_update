@@ -14,7 +14,7 @@ public class Imc_salud extends AppCompatActivity {
     private EditText estatura , peso;
     TextView valorimc;
 
-    Float imc, datoestatura, datopeso;
+    double imc, datoestatura, datopeso;
 
 
     @Override
@@ -30,11 +30,12 @@ public class Imc_salud extends AppCompatActivity {
 
 
     public void ver(View view){
-         datoestatura=Float.parseFloat(estatura.getText().toString());
-         datopeso =Float.parseFloat(peso.getText().toString());
+         datoestatura=Double.parseDouble(estatura.getText().toString());
+         datopeso =Double.parseDouble(peso.getText().toString());
 
-        imc = datopeso/(datoestatura*datoestatura);
-        valorimc.setText((int) Float.parseFloat(String.valueOf(imc)));
+        imc = (datopeso/(datoestatura*datoestatura));
+
+        valorimc.setText(String.valueOf(imc));
 
 
        // if (imc <18.5);

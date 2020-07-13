@@ -33,14 +33,13 @@ public class Logueo extends AppCompatActivity {
 
     public void registro(View view)
     {
-        Intent i = new Intent(this, Menu.class);
+        Intent i = new Intent(this, Registro.class);
         startActivity(i);
     }
 
     public void loguearse(View view)
     {
-        Intent i = new Intent(this, Menu.class);
-        startActivity(i);
+
 
         String nombre=email.getText().toString();
         String pass=contrasena.getText().toString();
@@ -58,13 +57,15 @@ public class Logueo extends AppCompatActivity {
 
         else {
 
-
             try {
                 Cursor cursor=admin.consultalogin
                         (email.getText().toString(),contrasena.getText().toString());
                 if (cursor.getCount()>0)
-                { Intent f = new Intent(this, Menu.class);
-                    startActivity(f);}
+
+                { Intent r = new Intent(this,Imc_salud.class);
+
+                    startActivity(r);}
+
             } catch (SQLException e) {
                 e.printStackTrace();
             }
