@@ -13,14 +13,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/fondobienvenida"
+            android:background="@drawable/encuesta"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="352dp"
                 android:layout_height="362dp"
-                android:background="@drawable/fondomenu"
+                android:background="@drawable/encuesta"
                 android:gravity="center_horizontal|center_vertical"
                 android:orientation="vertical">
 
@@ -35,8 +35,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal|left"
                     android:text="Hola recibimos tu encuesta!"
-                    android:textSize="14sp"
-                    android:textStyle="normal|bold" />
+                    android:textColor="#F3EDED"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold|italic" />
 
                 <TextView
                     android:id="@+id/textView18"

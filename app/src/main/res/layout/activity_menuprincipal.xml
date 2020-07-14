@@ -20,9 +20,12 @@
             <TextView
                 android:id="@+id/textView61"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="56dp"
+                android:fontFamily="cursive"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="Balance" />
+                android:text="Balance"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
 
             <LinearLayout
                 android:layout_width="225dp"
@@ -35,23 +38,23 @@
                     android:layout_height="261dp">
 
                     <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:gravity="center_horizontal">
 
                         <Button
                             android:id="@+id/button24"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="ajustes"
-                            android:text="Button" />
+                            android:layout_width="84dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/settings"
+                            android:onClick="ajustes" />
 
                         <Button
                             android:id="@+id/button28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="Tareas"
-                            android:text="Button" />
+                            android:layout_width="79dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/agenda"
+                            android:onClick="Tareas" />
                     </TableRow>
 
                     <TableRow
@@ -63,13 +66,15 @@
                             android:id="@+id/textView63"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="TextView" />
+                            android:gravity="center"
+                            android:text="Ajustes" />
 
                         <TextView
                             android:id="@+id/textView68"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="TextView" />
+                            android:gravity="center"
+                            android:text="Tareas" />
                     </TableRow>
 
                     <TableRow
@@ -79,17 +84,17 @@
 
                         <Button
                             android:id="@+id/button31"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="musica"
-                            android:text="Button" />
+                            android:layout_width="50dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/music"
+                            android:onClick="musica" />
 
                         <Button
                             android:id="@+id/button32"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="Juegos"
-                            android:text="Button" />
+                            android:layout_width="89dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/juegos"
+                            android:onClick="Juegos" />
                     </TableRow>
 
                     <TableRow
@@ -101,13 +106,15 @@
                             android:id="@+id/textView71"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="TextView" />
+                            android:gravity="center"
+                            android:text="Musica" />
 
                         <TextView
                             android:id="@+id/textView72"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="TextView" />
+                            android:gravity="center"
+                            android:text="Juegos" />
                     </TableRow>
 
                     <TableRow
@@ -117,22 +124,24 @@
 
                         <Button
                             android:id="@+id/button34"
-                            android:layout_width="wrap_content"
+                            android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:onClick="imc_salud"
-                            android:text="Button" />
+                            android:background="@drawable/arbbol"
+                            android:gravity="center"
+                            android:onClick="imc_salud" />
 
                         <Button
                             android:id="@+id/button35"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="Tips"
-                            android:text="Button" />
+                            android:layout_width="97dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/icon20"
+                            android:gravity="center"
+                            android:onClick="Tips" />
                     </TableRow>
 
                     <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="43dp"
                         android:gravity="center_horizontal">
 
                         <TextView
