@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/fondomenu"
-            android:gravity="center|center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical">
 
             <TextView
@@ -28,12 +28,12 @@
 
             <TextView
                 android:id="@+id/textView53"
-                android:layout_width="358dp"
-                android:layout_height="198dp"
+                android:layout_width="355dp"
+                android:layout_height="138dp"
                 android:background="#77FFFFFF"
                 android:gravity="center"
-                android:text="La fórmula del IMC es el peso en kilógramos dividido por el cuadrado de la altura en metros (kg/m2). El IMC es una indicación simple de la relación entre el peso y la talla que se utiliza frecuentemente para identificar el sobrepeso y la obesidad en los adultos, tanto a nivel individual como poblacional."
-                android:textSize="18sp"
+                android:text="La fórmula del IMC es el peso en kilógramos dividido por el cuadrado de la altura en metros (kg/m2). El IMC es una indicación simple de la relación entre el peso y la talla que se utiliza frecuentemente para identificar el sobrepeso y la obesidad en los adultos, tanto a nivel individual como poblacional ."
+                android:textSize="14sp"
                 android:textStyle="normal|bold|italic" />
 
             <LinearLayout
@@ -119,7 +119,9 @@
                             android:id="@+id/idvalor"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text=" " />
+                            android:text=" "
+                            android:textSize="18sp"
+                            android:textStyle="normal|bold" />
                     </TableRow>
 
                     <TableRow
@@ -130,14 +132,14 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="266dp"
-                android:layout_height="154dp"
+                android:layout_width="301dp"
+                android:layout_height="157dp"
                 android:background="#0CFFFFFF"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView45"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal|center_vertical"
                     android:text=" " />
@@ -145,12 +147,8 @@
                 <TextView
                     android:id="@+id/textView46"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/textView51"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    tools:text=" " />
 
             </LinearLayout>
 
@@ -165,6 +163,15 @@
                     android:layout_height="45dp"
                     android:background="?attr/actionModeCloseDrawable"
                     android:onClick="Atrass" />
+
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="100dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/botocuadrad"
+                    android:onClick="ver"
+                    android:text="IMC" />
 
                 <Button
                     android:id="@+id/button9"

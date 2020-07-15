@@ -16,7 +16,7 @@ public class parati extends AppCompatActivity {
 
     public void Regresar(View view)
     {
-        Intent i = new Intent(this, Menuprincipal.class);
+        Intent i = new Intent(this, Imc_salud.class);
         startActivity(i);
     }
 

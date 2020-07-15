@@ -135,13 +135,15 @@
                             android:id="@+id/button15"
                             android:layout_width="110dp"
                             android:layout_height="100dp"
-                            android:background="@drawable/diet" />
+                            android:background="@drawable/diet"
+                            android:onClick="imc_salud" />
 
                         <Button
                             android:id="@+id/button16"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:background="@drawable/icon20" />
+                            android:background="@drawable/icon20"
+                            android:onClick="Tips" />
                     </TableRow>
 
                     <TableRow
