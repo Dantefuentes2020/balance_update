@@ -75,6 +75,13 @@
                     android:background="@drawable/botocuadrad"
                     android:text="Guardar" />
 
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/botocuadrad"
+                    android:text="Atras" />
+
             </LinearLayout>
         </LinearLayout>
 

@@ -2,6 +2,7 @@ package com.appbalance.balance_d;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -66,6 +67,12 @@ public class Imc_salud extends AppCompatActivity {
             Multitexta.setText(pesoalto);
         }
 
+    }
+
+    public void Atrass(View view)
+    {
+        Intent i = new Intent(this, Menuprincipal.class);
+        startActivity(i);
     }
 
 

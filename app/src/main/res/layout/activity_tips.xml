@@ -34,9 +34,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal|left"
-                    android:text="Hola tenemos algunos tips para ti"
-                    android:textSize="14sp"
-                    android:textStyle="normal|bold" />
+                    android:text="Hola aca puedes regular tus estados "
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold|italic" />
 
                 <TextView
                     android:id="@+id/textView18"
@@ -58,7 +58,9 @@
                     android:id="@+id/textView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Como te sientes? " />
+                    android:text="a medida que revisas la app!"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold|italic" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -70,7 +72,8 @@
                         android:id="@+id/textView21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Riesgo" />
+                        android:text="Riesgo"
+                        android:textSize="18sp" />
 
                     <SeekBar
                         android:id="@+id/seekBar"
@@ -81,7 +84,8 @@
                         android:id="@+id/textView22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Fatiga" />
+                        android:text="Fatiga"
+                        android:textSize="18sp" />
 
                     <SeekBar
                         android:id="@+id/seekBar2"
@@ -92,7 +96,8 @@
                         android:id="@+id/textView23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Animo" />
+                        android:text="Animo"
+                        android:textSize="18sp" />
 
                     <SeekBar
                         android:id="@+id/seekBar3"
@@ -113,6 +118,7 @@
                 android:layout_width="85dp"
                 android:layout_height="65dp"
                 android:background="@drawable/botocuadrad"
+                android:onClick="Atrasc"
                 android:text="Atras" />
 
             <Button
@@ -120,8 +126,8 @@
                 android:layout_width="85dp"
                 android:layout_height="65dp"
                 android:background="@drawable/botocuadrad"
-                android:onClick="siguiente"
-                android:text="continuar" />
+                android:onClick="guardar"
+                android:text="Guardar Estado" />
         </LinearLayout>
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
