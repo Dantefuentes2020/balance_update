@@ -8,7 +8,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".parati"></activity>
+        <activity android:name=".animo"></activity>
+        <activity android:name=".parati" />
         <activity android:name=".Menuprincipal" />
         <activity android:name=".Tareas" />
         <activity android:name=".Logueo" />

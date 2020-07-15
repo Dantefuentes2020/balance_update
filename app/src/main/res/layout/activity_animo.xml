@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parati_font"
+    tools:context=".animo">
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="313dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginRight="208dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="El mejor animo es reir!"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="290dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="cursive"
+        android:text="La función química del humor es ésta: cambiar el carácter de nuestros pensamientos"
+        android:textColor="#3BA198"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="326dp"
+        android:layout_height="326dp"
+        app:srcCompat="@drawable/perrito"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="78dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/back"
+        android:onClick="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
