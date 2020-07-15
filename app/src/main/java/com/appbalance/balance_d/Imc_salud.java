@@ -75,5 +75,11 @@ public class Imc_salud extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void siguiente(View view)
+    {
+        Intent i = new Intent(this, parati.class);
+        startActivity(i);
+    }
+
 
 }
