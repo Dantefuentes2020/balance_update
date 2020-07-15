@@ -41,6 +41,8 @@ public class Conexion extends SQLiteOpenHelper {
 
 
 
+
+
     public Vector<String> consultaregistros(String nombre){
     Vector<String> consulta = new Vector<String>();
     SQLiteDatabase database = getReadableDatabase();

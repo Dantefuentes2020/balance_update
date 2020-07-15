@@ -31,6 +31,12 @@ public class Registro extends AppCompatActivity  implements Datos {
 
 
     }
+
+    public void atrasl(View view)
+    {
+        Intent i = new Intent(this, Logueo.class);
+        startActivity(i);
+    }
     public void registro(View view){
      String sMensaje;
         String nombreuser = nombre.getText().toString().trim();
@@ -86,6 +92,7 @@ public class Registro extends AppCompatActivity  implements Datos {
         Toast.makeText(this, "Registro completado con exito", Toast.LENGTH_SHORT).show();
 
         Intent ven=new Intent(this,Menuprincipal.class);
+        ven.putExtra("nombre",nombre_usuario);
 
         startActivity(ven);
     }

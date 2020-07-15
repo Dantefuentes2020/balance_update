@@ -40,7 +40,7 @@
             <TableLayout
                 android:layout_width="398dp"
                 android:layout_height="257dp"
-                android:background="@drawable/fondomenu"
+                android:background="#52FFFFFF"
                 android:gravity="center_horizontal|center_vertical">
 
                 <TableRow

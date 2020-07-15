@@ -5,13 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class Menuprincipal extends AppCompatActivity {
+    private TextView nombreuser;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menuprincipal);
+        nombreuser=(TextView)findViewById(R.id.textView52);
+
+        String nombre=getIntent().getStringExtra("nombre");
+        nombreuser.setText("Hola  "+nombre);
     }
 
     public void ajustes(View view)

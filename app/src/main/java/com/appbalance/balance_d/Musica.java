@@ -17,7 +17,6 @@ public class Musica extends AppCompatActivity {
     public void play (View view){
 
         mp = MediaPlayer.create(this,R.raw.haku);
-        mp.stop();
         mp.start();
         Toast.makeText(this, "play", Toast.LENGTH_SHORT).show();
     }

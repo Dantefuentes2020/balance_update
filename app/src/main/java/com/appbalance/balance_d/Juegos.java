@@ -15,8 +15,11 @@ public class Juegos extends AppCompatActivity {
 
     }
 
-    public void button27(View view){
+    public void atrasj(View view){
         Intent i = new Intent(this, Menuprincipal.class);
         startActivity(i);
     }
+
+
+
 }

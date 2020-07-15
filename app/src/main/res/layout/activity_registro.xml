@@ -125,6 +125,7 @@
                         android:layout_height="65dp"
                         android:layout_weight="1"
                         android:background="@drawable/botocuadrad"
+                        android:onClick="atrasl"
                         android:text="atras" />
 
                     <Button
